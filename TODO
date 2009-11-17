@@ -1,0 +1,6 @@
+I. Project:
+
+ * make total time uneditable
+ * double click on an empty row is equivalent of clicking + (to add a new project)
+ * alert on delete
+ * automatically save the document
