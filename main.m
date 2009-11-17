@@ -2,13 +2,13 @@
 //  main.m
 //  Slobo
 //
-//  Created by Aurelian Oancea on 11/12/09.
-//  Copyright __MyCompanyName__ 2009 . All rights reserved.
+//  Created by Aurelian Oancea on 11/13/09.
+//  Copyright __MyCompanyName__ 2009. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
 int main(int argc, char *argv[])
 {
-    return NSApplicationMain(argc, (const char **) argv);
+    return NSApplicationMain(argc,  (const char **) argv);
 }
