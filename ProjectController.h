@@ -10,7 +10,10 @@
 
 
 @interface ProjectController : NSArrayController {
-
+	IBOutlet NSTableView *tvProjects;
+	
 }
+
+- (IBAction)clickedAddProject:(id)sender;
 
 @end

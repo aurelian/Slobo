@@ -8,7 +8,20 @@
 
 #import "ProjectController.h"
 
-
 @implementation ProjectController
+
+- (IBAction)clickedAddProject:(id)sender {
+	[self add:sender];
+}
+
+- (BOOL)tableView:(NSTableView *)aTableView shouldEditTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+	if ([[aTableColumn identifier] isEqual:@"name"]) {
+		NSLog(@"identifier is name, returning true");
+		return YES;
+	} else {
+		NSLog(@"identifier is %@, returning false", [aTableColumn identifier]);
+		return NO;
+	}
+}
 
 @end
