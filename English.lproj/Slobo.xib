@@ -21,7 +21,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="525"/>
+			<integer value="522"/>
 			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -129,13 +129,9 @@
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="534017072">
 														<int key="NSCellFlags">337772096</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags2">133120</int>
 														<string key="NSContents">Text Cell</string>
-														<object class="NSFont" key="NSSupport" id="77479368">
-															<string key="NSName">LucidaGrande</string>
-															<double key="NSSize">13</double>
-															<int key="NSfFlags">1044</int>
-														</object>
+														<reference key="NSSupport" ref="26"/>
 														<reference key="NSControlView" ref="692189294"/>
 														<object class="NSColor" key="NSBackgroundColor" id="939676567">
 															<int key="NSColorSpace">6</int>
@@ -181,9 +177,9 @@
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="50116923">
 														<int key="NSCellFlags">337772096</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags2">133120</int>
 														<string key="NSContents">Text Cell</string>
-														<reference key="NSSupport" ref="77479368"/>
+														<reference key="NSSupport" ref="26"/>
 														<reference key="NSControlView" ref="692189294"/>
 														<reference key="NSBackgroundColor" ref="939676567"/>
 														<reference key="NSTextColor" ref="450622934"/>
@@ -206,12 +202,12 @@
 													<bytes key="NSWhite">MC41AA</bytes>
 												</object>
 											</object>
-											<double key="NSRowHeight">17</double>
-											<int key="NSTvFlags">-677380096</int>
+											<double key="NSRowHeight">14</double>
+											<int key="NSTvFlags">-677347328</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
 											<int key="NSGridStyleMask">1</int>
-											<int key="NSColumnAutoresizingStyle">4</int>
+											<int key="NSColumnAutoresizingStyle">1</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
 											<int key="NSDraggingSourceMaskForNonLocal">0</int>
 											<bool key="NSAllowsTypeSelect">YES</bool>
@@ -269,7 +265,7 @@
 							<reference key="NSContentView" ref="623856837"/>
 							<reference key="NSHeaderClipView" ref="979686644"/>
 							<reference key="NSCornerView" ref="378211388"/>
-							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
+							<bytes key="NSScrollAmts">QSAAAEEgAABBgAAAQYAAAA</bytes>
 						</object>
 						<object class="BWUnanchoredButton" id="54735369">
 							<reference key="NSNextResponder" ref="823886803"/>
@@ -281,7 +277,11 @@
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents"/>
-								<reference key="NSSupport" ref="77479368"/>
+								<object class="NSFont" key="NSSupport" id="77479368">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">13</double>
+									<int key="NSfFlags">1044</int>
+								</object>
 								<reference key="NSControlView" ref="54735369"/>
 								<int key="NSButtonFlags">-2033958657</int>
 								<int key="NSButtonFlags2">134</int>
@@ -3408,9 +3408,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<integer value="1"/>
-					<string>{{400, 418}, {480, 333}}</string>
+					<string>{{352, 423}, {480, 333}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{400, 418}, {480, 333}}</string>
+					<string>{{352, 423}, {480, 333}}</string>
 					<integer value="1"/>
 					<integer value="1"/>
 					<integer value="1"/>
