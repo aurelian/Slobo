@@ -13,6 +13,6 @@
 
 }
 
--(NSNumber *)duration;
+-(NSTimeInterval)duration;
 
 @end
