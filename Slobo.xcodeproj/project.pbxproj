@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE917B410B6F37200C5B8E6 /* ProjectEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917B310B6F37200C5B8E6 /* ProjectEntity.m */; };
+		0CE917B910B6F45500C5B8E6 /* TaskEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917B810B6F45500C5B8E6 /* TaskEntity.m */; };
+		0CE917BC10B6F53400C5B8E6 /* WorkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917BB10B6F53400C5B8E6 /* WorkEntity.m */; };
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
 		770B37ED0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* Slobo_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Slobo_AppDelegate.m */; };
@@ -17,6 +20,12 @@
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0CE917B210B6F37200C5B8E6 /* ProjectEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectEntity.h; sourceTree = "<group>"; };
+		0CE917B310B6F37200C5B8E6 /* ProjectEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectEntity.m; sourceTree = "<group>"; };
+		0CE917B710B6F45500C5B8E6 /* TaskEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskEntity.h; sourceTree = "<group>"; };
+		0CE917B810B6F45500C5B8E6 /* TaskEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskEntity.m; sourceTree = "<group>"; };
+		0CE917BA10B6F53400C5B8E6 /* WorkEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkEntity.h; sourceTree = "<group>"; };
+		0CE917BB10B6F53400C5B8E6 /* WorkEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkEntity.m; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -123,6 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				770B37EC0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel */,
+				0CE917B210B6F37200C5B8E6 /* ProjectEntity.h */,
+				0CE917B310B6F37200C5B8E6 /* ProjectEntity.m */,
+				0CE917B710B6F45500C5B8E6 /* TaskEntity.h */,
+				0CE917B810B6F45500C5B8E6 /* TaskEntity.m */,
+				0CE917BA10B6F53400C5B8E6 /* WorkEntity.h */,
+				0CE917BB10B6F53400C5B8E6 /* WorkEntity.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,6 +200,9 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				77C8280E06725ACE000B614F /* Slobo_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel in Sources */,
+				0CE917B410B6F37200C5B8E6 /* ProjectEntity.m in Sources */,
+				0CE917B910B6F45500C5B8E6 /* TaskEntity.m in Sources */,
+				0CE917BC10B6F53400C5B8E6 /* WorkEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
