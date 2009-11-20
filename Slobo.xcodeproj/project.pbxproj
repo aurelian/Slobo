@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9717EC10B7133F00B924E4 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9717EB10B7133F00B924E4 /* ProjectController.m */; };
+		0C97180A10B7139C00B924E4 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C97180910B7139C00B924E4 /* BWToolkitFramework.framework */; };
+		0C97183C10B713B400B924E4 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C97180910B7139C00B924E4 /* BWToolkitFramework.framework */; };
+		0C97184610B713FF00B924E4 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C97184410B713FF00B924E4 /* TaskController.m */; };
+		0C97184910B7140A00B924E4 /* WorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C97184810B7140A00B924E4 /* WorkController.m */; };
 		0CE917B410B6F37200C5B8E6 /* ProjectEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917B310B6F37200C5B8E6 /* ProjectEntity.m */; };
 		0CE917B910B6F45500C5B8E6 /* TaskEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917B810B6F45500C5B8E6 /* TaskEntity.m */; };
 		0CE917BC10B6F53400C5B8E6 /* WorkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE917BB10B6F53400C5B8E6 /* WorkEntity.m */; };
@@ -18,8 +23,28 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C97184210B713C200B924E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C97183C10B713B400B924E4 /* BWToolkitFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C9717EA10B7133F00B924E4 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
+		0C9717EB10B7133F00B924E4 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
+		0C97180910B7139C00B924E4 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = BWToolkit/BWToolkitFramework.framework; sourceTree = DEVELOPER_DIR; };
+		0C97184410B713FF00B924E4 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
+		0C97184510B713FF00B924E4 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
+		0C97184710B7140A00B924E4 /* WorkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkController.h; sourceTree = "<group>"; };
+		0C97184810B7140A00B924E4 /* WorkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkController.m; sourceTree = "<group>"; };
 		0CE917B210B6F37200C5B8E6 /* ProjectEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectEntity.h; sourceTree = "<group>"; };
 		0CE917B310B6F37200C5B8E6 /* ProjectEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectEntity.m; sourceTree = "<group>"; };
 		0CE917B710B6F45500C5B8E6 /* TaskEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskEntity.h; sourceTree = "<group>"; };
@@ -46,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0C97180A10B7139C00B924E4 /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +87,23 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		0C9717F610B7135B00B924E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C97184410B713FF00B924E4 /* TaskController.m */,
+				0C97184510B713FF00B924E4 /* TaskController.h */,
+				0C97184710B7140A00B924E4 /* WorkController.h */,
+				0C97184810B7140A00B924E4 /* WorkController.m */,
+				0C9717EA10B7133F00B924E4 /* ProjectController.h */,
+				0C9717EB10B7133F00B924E4 /* ProjectController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C97180910B7139C00B924E4 /* BWToolkitFramework.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -90,6 +130,7 @@
 		29B97314FDCFA39411CA2CEA /* Slobo */ = {
 			isa = PBXGroup;
 			children = (
+				0C9717F610B7135B00B924E4 /* Controllers */,
 				7756732906782D8800D1FEB8 /* Models */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -152,6 +193,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				0C97184210B713C200B924E4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -203,6 +245,9 @@
 				0CE917B410B6F37200C5B8E6 /* ProjectEntity.m in Sources */,
 				0CE917B910B6F45500C5B8E6 /* TaskEntity.m in Sources */,
 				0CE917BC10B6F53400C5B8E6 /* WorkEntity.m in Sources */,
+				0C9717EC10B7133F00B924E4 /* ProjectController.m in Sources */,
+				0C97184610B713FF00B924E4 /* TaskController.m in Sources */,
+				0C97184910B7140A00B924E4 /* WorkController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +278,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/BWToolkit\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -251,6 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/BWToolkit\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
