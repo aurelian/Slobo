@@ -2,7 +2,7 @@
 //  Slobo_AppDelegate.h
 //  Slobo
 //
-//  Created by Aurelian Oancea on 11/13/09.
+//  Created by Aurelian Oancea on 11/20/09.
 //  Copyright __MyCompanyName__ 2009 . All rights reserved.
 //
 

@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C57527F10ADF734003C80B2 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C57527E10ADF734003C80B2 /* BWToolkitFramework.framework */; };
-		0C57528310ADF754003C80B2 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C57527E10ADF734003C80B2 /* BWToolkitFramework.framework */; };
-		0C5752CB10AEB7A1003C80B2 /* ProjectEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5752CA10AEB7A1003C80B2 /* ProjectEntity.m */; };
-		0C57531710AF7555003C80B2 /* ProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C57531610AF7555003C80B2 /* ProjectController.m */; };
-		0C67B7D410B2D72500D661E3 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0C67B7D310B2D72500D661E3 /* TODO */; };
-		2F7446990DB6B7EA00F9684A /* Slobo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* Slobo.xib */; };
+		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
 		770B37ED0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* Slobo_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Slobo_AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -20,32 +15,13 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0C5752BC10ADF75E003C80B2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0C57528310ADF754003C80B2 /* BWToolkitFramework.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0C57527E10ADF734003C80B2 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = BWToolkit/BWToolkitFramework.framework; sourceTree = DEVELOPER_DIR; };
-		0C5752C910AEB7A1003C80B2 /* ProjectEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectEntity.h; sourceTree = "<group>"; };
-		0C5752CA10AEB7A1003C80B2 /* ProjectEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectEntity.m; sourceTree = "<group>"; };
-		0C57531510AF7555003C80B2 /* ProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectController.h; sourceTree = "<group>"; };
-		0C57531610AF7555003C80B2 /* ProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectController.m; sourceTree = "<group>"; };
-		0C67B7D310B2D72500D661E3 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Slobo.xib; sourceTree = "<group>"; };
+		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Slobo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slobo_Prefix.pch; sourceTree = "<group>"; };
 		770B37EC0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Slobo_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -61,7 +37,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				0C57527F10ADF734003C80B2 /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +48,6 @@
 			children = (
 				77C8280B06725ACE000B614F /* Slobo_AppDelegate.h */,
 				77C8280C06725ACE000B614F /* Slobo_AppDelegate.m */,
-				0C57531510AF7555003C80B2 /* ProjectController.h */,
-				0C57531610AF7555003C80B2 /* ProjectController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -83,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				0C57527E10ADF734003C80B2 /* BWToolkitFramework.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -131,10 +103,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0C67B7D310B2D72500D661E3 /* TODO */,
 				8D1107310486CEB800E47090 /* Slobo-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				2F7446970DB6B7EA00F9684A /* Slobo.xib */,
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -151,8 +122,6 @@
 		7756732906782D8800D1FEB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0C5752C910AEB7A1003C80B2 /* ProjectEntity.h */,
-				0C5752CA10AEB7A1003C80B2 /* ProjectEntity.m */,
 				770B37EC0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel */,
 			);
 			name = Models;
@@ -168,7 +137,6 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				0C5752BC10ADF75E003C80B2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -203,8 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				2F7446990DB6B7EA00F9684A /* Slobo.xib in Resources */,
-				0C67B7D410B2D72500D661E3 /* TODO in Resources */,
+				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +185,6 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				77C8280E06725ACE000B614F /* Slobo_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* Slobo_DataModel.xcdatamodel in Sources */,
-				0C5752CB10AEB7A1003C80B2 /* ProjectEntity.m in Sources */,
-				0C57531710AF7555003C80B2 /* ProjectController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +199,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2F7446970DB6B7EA00F9684A /* Slobo.xib */ = {
+		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2F7446980DB6B7EA00F9684A /* English */,
 			);
-			name = Slobo.xib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -250,10 +215,6 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/BWToolkit\"",
-				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -272,10 +233,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/BWToolkit\"",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
