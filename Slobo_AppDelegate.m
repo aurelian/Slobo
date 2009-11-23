@@ -33,10 +33,15 @@
  */
  
 - (NSManagedObjectModel *)managedObjectModel {
-
+	
     if (managedObjectModel) return managedObjectModel;
 	
-    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+	
+	for (NSEntityDescription *entity in managedObjectModel) {
+		NSLog(@"loading entity: %@", [entity name]);
+	}	
+	
     return managedObjectModel;
 }
 
@@ -71,9 +76,9 @@
 		}
     }
     
-    NSURL *url = [NSURL fileURLWithPath: [applicationSupportDirectory stringByAppendingPathComponent: @"storedata"]];
+    NSURL *url = [NSURL fileURLWithPath: [applicationSupportDirectory stringByAppendingPathComponent: @"db.sqlite3"]];
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: mom];
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSXMLStoreType 
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType 
                                                 configuration:nil 
                                                 URL:url 
                                                 options:nil 

@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface TaskEntity : NSObject {
+@interface TaskEntity : NSManagedObject {
 
 }
 

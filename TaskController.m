@@ -9,4 +9,16 @@
 
 @implementation TaskController
 
+- (BOOL)tableView:(NSTableView *)aTableView 
+shouldEditTableColumn:(NSTableColumn *)aTableColumn 
+			  row:(NSInteger)rowIndex {
+	if ([[aTableColumn identifier] isEqual:@"name"]) {
+		NSLog(@"TaskController: identifier is name, returning true");
+		return YES;
+	} else {
+		NSLog(@"TaskController: identifier is %@, returning false", [aTableColumn identifier]);
+		return NO;
+	}
+}
+
 @end
