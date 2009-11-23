@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+// #include <stdlib.h>
+// Random number: arc4random() % 60
 
 @interface ProjectEntity : NSManagedObject {
 
