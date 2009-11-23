@@ -8,7 +8,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface WorkController : NSArrayController {
-
+	NSTimer *timer;
 }
+
+- (void)timerFired:(NSTimer*)theTimer;
+- (IBAction)startWork:(id)sender;
+- (IBAction)endWork:(id)sender;
 
 @end
