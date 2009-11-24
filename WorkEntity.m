@@ -8,18 +8,12 @@
 
 #import "WorkEntity.h"
 
-
 @implementation WorkEntity
 
+@synthesize duration;
+
 -(NSTimeInterval) duration {
-	[self willAccessValueForKey:@"start"];
-	NSDate *start = [self primitiveValueForKey:@"start"];
-	[self didAccessValueForKey:@"start"];
-	[self willAccessValueForKey:@"end"];
-	NSDate *end = [self primitiveValueForKey:@"end"];
-	[self didAccessValueForKey:@"end"];
-	NSTimeInterval dur = [end timeIntervalSinceDate:start];
-	return dur;
+	return [[self end] timeIntervalSinceDate:[self start]];
 }
 
 @end

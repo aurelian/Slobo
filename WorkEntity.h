@@ -10,9 +10,9 @@
 
 
 @interface WorkEntity : NSManagedObject {
-
+	NSTimeInterval duration;
 }
 
--(NSTimeInterval)duration;
+@property (assign) NSTimeInterval duration;
 
 @end

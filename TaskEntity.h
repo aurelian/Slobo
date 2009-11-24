@@ -8,11 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface TaskEntity : NSManagedObject {
 
 }
-
--(NSNumber *)totalSeconds;
 
 @end

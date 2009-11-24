@@ -6,29 +6,40 @@
 //
 
 #import "WorkController.h"
+#import "TaskEntity.h"
 
 @implementation WorkController
 
+@synthesize work;
+
 - (void)timerFired:(NSTimer*)theTimer {
-	NSLog(@"timer fiered!");
-	// update view
+	NSLog(@"timer #-->: %@", work);
+	NSDate *end= [work end];
+	// TaskEntity *task= [work task];
+	[work setEnd:[end dateByAddingTimeInterval:1.0]];
+	NSTimeInterval duration = [end timeIntervalSinceDate:[work start]];
+	[work setDuration:duration];
 }
 
 - (IBAction)startWork:(id)sender {
 	NSLog(@"got start work from %@", sender);
 	if (timer == nil) {
 		timer = [[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES] retain];
-	} else {
-		[timer fire];
+		work = [NSEntityDescription insertNewObjectForEntityForName:@"Work" 
+								             inManagedObjectContext:[self managedObjectContext]];
+		[work setStart:[NSDate date]];
+		[work setEnd:[NSDate date]];
+		[work setDuration:1.0];
+		[self addObject:work];
+		// NSLog(@"task: %@", [work task]);
 	}
+	[self timerFired:timer];
 }
 
 - (IBAction)endWork:(id)sender {
-	NSLog(@"got end work from %@", sender);	
 	if (timer != nil) {
 		[timer invalidate];
 		timer = nil;
 	}
 }
-
 @end

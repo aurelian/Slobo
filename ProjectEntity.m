@@ -8,11 +8,6 @@
 
 #import "ProjectEntity.h"
 
-
 @implementation ProjectEntity
-
--(NSNumber *)totalSeconds {
-	return [NSNumber numberWithInt:6];
-}
 
 @end

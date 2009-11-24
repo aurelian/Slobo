@@ -8,11 +8,6 @@
 
 #import "TaskEntity.h"
 
-
 @implementation TaskEntity
-
--(NSNumber *)totalSeconds {
-	return [NSNumber numberWithInt:6];
-}
 
 @end

@@ -7,9 +7,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "WorkEntity.h"
+
 @interface WorkController : NSArrayController {
 	NSTimer *timer;
+	WorkEntity *work;	
 }
+
+@property (assign) WorkEntity *work;
 
 - (void)timerFired:(NSTimer*)theTimer;
 - (IBAction)startWork:(id)sender;

@@ -40,7 +40,7 @@
 	
 	for (NSEntityDescription *entity in managedObjectModel) {
 		NSLog(@"loading entity: %@", [entity name]);
-	}	
+	}
 	
     return managedObjectModel;
 }
