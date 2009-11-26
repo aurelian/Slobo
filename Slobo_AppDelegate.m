@@ -152,16 +152,16 @@
  */
  
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
-
+	
     if (!managedObjectContext) return NSTerminateNow;
-
+	
     if (![managedObjectContext commitEditing]) {
         NSLog(@"%@:%s unable to commit editing to terminate", [self class], _cmd);
         return NSTerminateCancel;
     }
-
+	
     if (![managedObjectContext hasChanges]) return NSTerminateNow;
-
+	
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
     
@@ -194,7 +194,8 @@
         if (answer == NSAlertAlternateReturn) return NSTerminateCancel;
 
     }
-
+	
+	NSLog(@"ohai -4");
     return NSTerminateNow;
 }
 
