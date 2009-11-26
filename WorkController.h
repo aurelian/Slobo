@@ -15,13 +15,18 @@
 	WorkEntity *_work;
 	TaskEntity *_task;
 	ProjectEntity *_project;
+	IBOutlet NSButton *_startButton;
+	IBOutlet NSButton *_stopButton;
 }
 
+@property (assign) NSTimer *timer;
 @property (assign) WorkEntity *_work;
 @property (assign) TaskEntity *_task;
 @property (assign) ProjectEntity *_project;
 
-- (void)timerFired:(NSTimer*)theTimer;
+@property (assign) NSButton *_startButton;
+@property (assign) NSButton *_stopButton;
+
 - (IBAction)startWork:(id)sender;
 - (IBAction)endWork:(id)sender;
 
