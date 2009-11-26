@@ -11,38 +11,48 @@
 
 @implementation WorkController
 
-@synthesize work;
+@synthesize _work;
+@synthesize _task;
+@synthesize _project;
 
-- (void)timerFired:(NSTimer*)theTimer {
+- (BOOL)tableView:(NSTableView *)aTableView 
+shouldEditTableColumn:(NSTableColumn *)aTableColumn 
+			  row:(NSInteger)rowIndex {
+	return NO;
+}
+
+- (void)updateTotalSeconds:(NSManagedObject *)entity {
+	NSInteger _totalSeconds= [[entity totalSeconds] integerValue];
+	_totalSeconds++;
+	[entity setTotalSeconds:[NSNumber numberWithInteger:_totalSeconds] ];
+}
+
+- (void)timerFired:(NSTimer *)theTimer {
 	
-	TaskEntity *task= [work task];
-	NSInteger totalSeconds = [[task totalSeconds] integerValue];
-	totalSeconds++;
-	[task setTotalSeconds:[NSNumber numberWithInt:totalSeconds]];
+	[self updateTotalSeconds:_task];
+	[self updateTotalSeconds:_project];
 	
-	ProjectEntity *project= [task project];
-	NSInteger projectTotalSeconds = [[project totalSeconds] integerValue];
-	projectTotalSeconds++;
-	[project setTotalSeconds:[NSNumber numberWithInt:projectTotalSeconds]];
-	
-	NSDate *end= [work end];
-	[work setEnd:[end dateByAddingTimeInterval:1.0]];
-	NSTimeInterval duration = [end timeIntervalSinceDate:[work start]];
-	[work setDuration:duration];
-	
+	NSDate *end= [_work end];
+	[_work setEnd:[end dateByAddingTimeInterval:1.0]];
+	NSTimeInterval duration = [end timeIntervalSinceDate:[_work start]];
+	[_work setDuration:duration];
 }
 
 - (IBAction)startWork:(id)sender {
 	if (timer == nil) {
 		timer = [[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES] retain];
-		work = [NSEntityDescription insertNewObjectForEntityForName:@"Work" 
+		_work = [NSEntityDescription insertNewObjectForEntityForName:@"Work" 
 								             inManagedObjectContext:[self managedObjectContext]];
-		[work setStart:[NSDate date]];
-		[work setEnd:[NSDate date]];
-		[work setDuration:1.0];
-		[self addObject:work];
+		[_work setStart:[NSDate date]];
+		[_work setEnd:[NSDate date]];
+		[_work setDuration:1.0];
+		[self addObject:_work];
+		
+		_task = [_work task];
+		_project= [_task project];
+		
+		[self timerFired:timer];		
 	}
-	[self timerFired:timer];
 }
 
 - (IBAction)endWork:(id)sender {
