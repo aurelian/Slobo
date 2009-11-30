@@ -16,18 +16,21 @@
 
 @synthesize _startButton, _stopButton;
 
+// work table is not editable
 - (BOOL)tableView:(NSTableView *)aTableView 
 shouldEditTableColumn:(NSTableColumn *)aTableColumn 
 			  row:(NSInteger)rowIndex {
 	return NO;
 }
 
+// helper to update Task and Project
 - (void)updateTotalSeconds:(NSManagedObject *)entity {
 	NSInteger _totalSeconds= [[entity totalSeconds] integerValue];
 	_totalSeconds++;
 	[entity setTotalSeconds:[NSNumber numberWithInteger:_totalSeconds] ];
 }
 
+// timer callback
 - (void)timerFired:(NSTimer *)theTimer {
 	
 	[self updateTotalSeconds:self._task];
@@ -46,11 +49,13 @@ shouldEditTableColumn:(NSTableColumn *)aTableColumn
 		self.timer = [[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES] retain];
 		self._work = [NSEntityDescription insertNewObjectForEntityForName:@"Work" 
 								             inManagedObjectContext:[self managedObjectContext]];
+		
 		[self._work setStart:[NSDate date]];
 		[self._work setEnd:[NSDate date]];
 		[self._work setDuration:1.0];
-		[self addObject:self._work];
 		
+		[self addObject:self._work];
+
 		self._task = [self._work task];
 		self._project= [self._task project];
 		
@@ -62,10 +67,13 @@ shouldEditTableColumn:(NSTableColumn *)aTableColumn
 
 - (IBAction)endWork:(id)sender {
 	if (self.timer != nil) {
-		[self.timer invalidate];
+		if([self.timer isValid]) {
+			[self.timer invalidate];
+		}
 		self.timer = nil;
 		[self._startButton setEnabled:YES];
 		[self._stopButton setEnabled:NO];
 	}
 }
+
 @end
