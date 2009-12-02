@@ -164,7 +164,7 @@
 	
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
-    
+		NSLog(@"ohai -3.0");
         // This error handling simply presents error information in a panel with an 
         // "Ok" button, which does not include any attempt at error recovery (meaning, 
         // attempting to fix the error.)  As a result, this implementation will 
@@ -175,7 +175,10 @@
         // recovery steps.  
                 
         BOOL result = [sender presentError:error];
-        if (result) return NSTerminateCancel;
+        if (result) {
+			return NSTerminateCancel;
+			NSLog(@"ohai -3.1");
+		}
 
         NSString *question = NSLocalizedString(@"Could not save changes while quitting.  Quit anyway?", @"Quit without saves error question message");
         NSString *info = NSLocalizedString(@"Quitting now will lose any changes you have made since the last successful save", @"Quit without saves error question info");
@@ -191,7 +194,10 @@
         [alert release];
         alert = nil;
         
-        if (answer == NSAlertAlternateReturn) return NSTerminateCancel;
+        if (answer == NSAlertAlternateReturn) {
+			NSLog(@"ohai -3.2");
+			return NSTerminateCancel;
+		}
 
     }
 	
