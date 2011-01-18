@@ -1,0 +1,4 @@
+h2. This is Slobo.App
+
+!http://aurelian.github.com/Slobo/slobo-app.png!
+
